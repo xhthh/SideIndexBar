@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xht="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/editText"
+        android:background="@android:color/white" />
+
+    <TextView
+        android:id="@+id/tv_overlay"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/shape_overlay_bg"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:visibility="gone" />
+
+    <com.xht.indexbar.widget.SideIndexBar
+        android:id="@+id/sideIndexBar"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/editText"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="30dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        xht:indexBarNormalTextColor="@color/gray"
+        xht:indexBarTextSize="16sp"
+        xht:indexBarTouchedTextColor="@color/orange" />
+</RelativeLayout>

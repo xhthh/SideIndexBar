@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SideIndexBar">
+        <attr name="indexBarTextSize" format="dimension" />
+        <attr name="indexBarNormalTextColor" format="color" />
+        <attr name="indexBarTouchedTextColor" format="color" />
+        <!--<attr name="android:text"/>-->
+    </declare-styleable>
+</resources>
